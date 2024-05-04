@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assests/styles.css">
+    <link rel="stylesheet" href="assests/style1.css">
+    <link rel="stylesheet" href="assests/style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+  <!-- navbar srt -->
+    <nav>
+        <div class="logo">
+            <a href="">
+                <img src="assests/pictures/fast-food1.png" alt="" height="8%" width="30px">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#last">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart_container">Order</a></li>
+            <li><a href="#aboutus">AboutUs</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+
+        </ul>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+           <!-- <a href="#">Sign In </a> -->
+
+           <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign In </a>
+           <a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Login </a>
+            
+            </div>
+          </div>
+
+          <!-- sign in Modal srt -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignIn</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheckMe">
+        <label class="form-check-label" for="gridCheckMe">
+          Check me out
+        </label>
+      </div>
+    </div>
+   
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="custom-btn" data-bs-dismiss="modal">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+       <!-- sign in Modal ends -->
+
+
+    <!-- login in Modal srt -->
+
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="custom-btn" data-bs-dismiss="modal">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- login in Modal end -->
+
+
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+ <!-- navbar end -->
+
+ <!-- carousel srt -->
+   <section class=" carousel-sec mt-1 mb-3 " >
+    <div id="demo" class="carousel slide  " data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner custom-inner  ">
+          <div class="carousel-item custom-item active ">
+            <div class="slide custom-caro ">
+              <div class="content ">
+                <span>Our special dishes</span>
+                <h3>Burgers</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- <a href="" class="btn btn-success">Order</a> -->
+              </div>
+  
+              <div class="image">
+                <img src="assests/pictures/b.png" alt="" >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item custom-item">
+            <div class="slide custom-caro">
+              <div class="content">
+                <span>Our special dishes</span>
+                <h3>Fries</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- <a href="" class="btn btn-success">Order</a> -->
+              </div>
+  
+              <div class="image">
+                <img src="assests/pictures/vecteezy_french-fries-png-with-ai-generated_25064817.png" alt=""  >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item custom-item">
+            <div class="slide custom-caro">
+              <div class="content">
+                <span>Our special dishes</span>
+                <h3>Fried Chicken</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- <a href="" class="btn btn-success">Order</a> -->
+              </div>
+  
+              <div class="image">
+                <img src="assests/pictures/fried-chicken-15489.png" alt=""   height="400px" width="500px">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+   </section>
+<!-- carousel end -->
+
+<!-- menu card srt -->
+   <section class="card-section"  id="menu">
+    <h2>Our Special dishes</h2>
+    <div class="card-container">
+      
+        <div class="card">
+            <div class="card-img">
+                <img src="assests/pictures/bar1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <!-- <a href="" class=" custom-btn" onclick="place_order('Poco',9999)">order</a> -->
+                <button class="custom-btn" onclick="cartlist('Burger',199)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="assests/pictures/fry1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Fries</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Fries',99)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="assests/pictures/slide1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Snack Pack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Snack Pack',399)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+              <img src="assests/pictures/bar1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Burger',199)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+              <img src="assests/pictures/fry1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Fries</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Fries',99)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+              <img src="assests/pictures/slide1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Snack Pack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Snack Pack',399)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+              <img src="assests/pictures/bar1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Burger',199)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+              <img src="assests/pictures/fry1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Fries</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Fries',99)">order</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+              <img src="assests/pictures/slide1.png" alt=""  >
+            </div>
+            <div class="card-content">
+                <h3>Snack Pack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum recusandae .</p>
+                <button class="custom-btn" onclick="cartlist('Snack Pack',399)">order</button>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- menu card end -->
+
+<section>
+  <div class="cart_containerf" id="cart_container">
+    <div class="cartf" id="cart">
+     <div class="pmodel" id="pmodel">
+      <hr>
+     </div>
+    <div class="addmore" id="addmore">
+     
+     </div> 
+    </div>
+    
+    <div class="carttotal">
+      <div class="calc">
+        <span class="cartsapn1" id="cartspan1">
+          Total :
+        </span>
+        <span class="cartspan2" id="cartspan2">
+
+        </span><br>
+    </div>
+      <button class="custom-btn" style="border-radius: 20px;">order</button>
+    </div>
+  </div>
+</section>
+
+<!-- fast order srt -->
+<div class="custom-form-div" id="order">
+    <center><h3>Fast Order</h3></center>
+    <form class="row  custom-form">
+        <div class="col-md-6 custom-col">
+          <label for="inputName" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="enter your name">
+        </div>
+        <div class="col-md-6 ">
+          <label for="inputPasswordOrder" class="form-label">Your Number</label>
+          <input type="text" class="form-control" id="inputPasswordOrder" placeholder="enter your number">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="sel1">Select Food:</label>
+          <select class="form-control" id="sel1">
+            <option>Burger</option>
+            <option>Fries</option>
+            <option>Fried Chicken</option>
+          </select>
+        </div>
+          <div class="col-md-6">
+            <label for="Extratopincs" class="form-label">Additional Food</label>
+            <input type="text" class="form-control" id="Extratopincs" placeholder="Extra With Food">
+          </div>
+        <div class="col-md-6 form-group">
+        
+          <label for="comment" class="form-label">Address</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <div class="col-md-6 form-group">
+        
+          <label for="msg" class="form-label">Your Message</label>
+          <textarea class="form-control" rows="5" id="msg"></textarea>
+        </div>
+      
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCit">
+        </div>
+      
+        <div class="col-md-6">
+          <label for="inputZipOrder" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZipOrder">
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheckOnline">
+            <label class="form-check-label" for="gridCheckOnline">
+              Online Payment
+            </label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheckPayment">
+            <label class="form-check-label" for="gridCheckPayment">
+              Cash On Delivery
+            </label>
+          </div>
+        </div>
+     
+
+        <!--terms  -->
+
+        <!-- Button trigger modal -->
+<p type="button" class="modal-p col-12"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Agree terms & condition
+</p>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Terms & Condition</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body custom-modal">
+                <b>1. Using the Website:</b>
+          By using our site, you agree to follow these rules.<br>
+
+          <b>2. Account Responsibility:</b>
+          If you create an account, keep your login details safe.<br>
+
+          <b>3. Ordering and Paying:</b>
+          When you order, provide accurate info. Pay securely, and handle any taxes or fees.<br>
+
+          <b>4. Delivery and Returns:</b>
+          Check our Shipping and Returns policy for delivery and return details.<br>
+
+          <b>5. Content and Copyright:</b>
+          Our website content is ours. Don't copy or use it without permission.<br>
+
+          <b>6. User Conduct:</b>
+          Be nice. Don't mess with the website or do anything harmful.<br>
+
+          <b>7. Privacy Policy:</b>
+          We care about your privacy. Read our Privacy Policy to understand how we handle your info.<br>
+
+          <b>8. Service Termination:</b>
+          We can stop your access if you break the rules or harm our website.<br>
+
+          <b>9. No Guarantees:</b>
+          We do our best, but we can't promise everything on the website is perfect.<br>
+
+          <b>10. Changes to Terms:</b>
+          We might update these rules. Keep an eye out for any changes.<br><br>
+
+          Thanks for being part of our food community! Enjoy your time on our website.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Understand</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </form>
+
+    <div class="col-12">
+      <button type="submit" class="custom-btn">Order</button>
+    </div>
+
+  </div>
+
+<!-- fast order end -->
+
+
+<!-- cart -->
+
+<!-- about us section srt -->
+  
+   <section class="container abs" id="aboutus">
+    <center>
+        <h3>About Us</h3>
+        <h6>This site for those who admire the taste and beauty of food</h6>
+    </center>
+    <div class="about">
+        <div class="d-lg-flex d-md-flex justify-content-center flex-fill">
+            <div class="  about_div"> 
+                <img class="m-2" src="assests/pictures/fast-food.png" alt="" height="19%" width="19%">
+                <h3 class="m-2">Our Story</h3>
+                <p class="m-2"> Our journey began with a simple passion for exceptional flavors, a love for culinary exploration, and a desire to share the joy of delicious meals.</p>
+            </div>
+            <div class="  about_div">
+                <img class="m-2" src="assests/pictures/mission.png" alt="" height="19%" width="19%">
+                <h3 class="m-2">Our Mission</h3>
+                <p class="m-2"> We believe that everyone should have access to a wide variety of cuisines, conveniently delivered with a click of a button.</p>
+            </div>
+            <div class="   about_div">
+                <img class="m-2" src="assests/pictures/fast-delivery.png" alt="" height="19%" width="19%"  >
+                <h3  class="m-2">Fast Delivery</h3>
+                <p class="m-2">Sit back and relax as our dedicated team ensures your order is prepared with care and delivered to your doorstep promptly. We take pride in our reliable and efficient delivery service.</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+<!-- about us section end -->
+
+<!-- feedback section srt -->
+   <section class="feedback" id="feedback">
+        <center>
+            <h3>Feedback</h3>
+            <h6>What our food lovers said</h6>
+        </center>
+        <div class="feed_div">
+            <div class="feed_div_img">
+                <img class="person" src="assests/pictures/person.jpg" alt="" >
+                <center><caption>Sangimangi</caption></center>
+            </div>
+            
+        
+            <div class="feed_div_detail pt-2">
+                <p class="feed_p">A Burger Bliss Experience!</p>
+                <img src="assests/pictures/star.png" alt="" height="15px" width="15px">
+                <img src="assests/pictures/star.png" alt="" height="15px" width="15px">
+                <img src="assests/pictures/star.png" alt="" height="15px" width="15px">
+                <img src="assests/pictures/star.png" alt="" height="15px" width="15px">
+                <img src="assests/pictures/rating (1).png" alt="" height="15px" width="15px">
+                <p class="mt-2">I recently ordered a burger through [Your Food Website Name], and let me just say, it was an absolute delight for my taste buds! The burger I ordered exceeded all expectations. Each bite was a perfect harmony of flavors – from the succulent, juicy patty to the fresh, crisp veggies. It's evident that the ingredients were of top-notch quality, making every element stand out.</p>
+            </div>
+        </div>
+        <div class="feedback2">
+            <input type="text" class="form-control" placeholder="Write Something...">
+            <button class="btn-info">
+                <img src="assests/pictures/send.png" alt="" height="30px" weight="30px"  >
+                send</button>
+        </div>
+    </section>
+
+<!-- feedback section end -->
+
+<!-- footer srt -->
+
+    <section class="container-fluid footer_sec mt-2 p-2">
+      <div class="footer   ">
+        <div class="col foot_div">
+            <h4>Location </h4>
+          <a href="">Chennai</a>
+          <a href="">Madurai</a>
+          <a href="">Thrichy</a>
+          <a href="">Coimbatore</a>
+          <a href="">Sivakasi</a>
+        </div>
+        <div class="col foot_div">
+            <h4>Quick Links</h4>
+          <a href="">Home</a>
+          <a href="#food">Food</a>
+          <a href="#aboutus">Aboutus</a>
+          <a href="#feedback">FeedBack</a>
+          <a href="#">Contactus</a>
+          
+        </div>
+        <div class="col foot_div">
+            <h4>Contact Info  </h4>
+          <a href="">+91 6388039506</a>
+          <a href="">+91 7698785134</a>
+          <a href="">vaaya_moodra_korangu_@gmail.com </a>
+          <a href="">vada_pochey_@gmail.com</a>
+          <a href="">naa_apdiye_shock_aaiten_@gmail.com</a>
+        </div>
+        <div class="col foot_div">
+            <h4>Follow Us </h4>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Instagram</a>
+          <a href="">Youtube</a>
+          <a href="">LinkedIn</a>
+        </div>
+        
+      </div>
+    <hr>
+    <p style="text-align: center;">Copyrights @ 2023 By Mr.Freaky Designer</p>
+    </section>
+
+<!-- footer end -->
+
+
+<!-- eg -->
+
+<div id="last">
+  hihi
+
+</div>
+    
+    <script src="assests/script.js"></script>
+</body>
+<script>
+    const menu = document.querySelector(".menu")
+    const menulist = document.querySelector("nav ul")
+    menu.addEventListener('click',()=>{
+        menulist.classList.toggle('showmenu')
+    })
+</script>
+</html>

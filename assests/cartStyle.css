@@ -1,0 +1,25 @@
+
+.cart_containerf
+{
+    background-color: #979db6;
+    padding: 2rem;
+   
+    
+}
+.cartf
+{
+    background-color: aqua;
+    /* max-height: 300px;
+    overflow: scroll; */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pmodel input,.b1,.b2
+{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+   
+}
